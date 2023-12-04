@@ -1,0 +1,37 @@
+doctype html 
+html
+    head
+        title Document
+        link(rel='stylesheet' href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap")   
+        link(rel='stylesheet' href="https://fonts.gstatic.com")
+         
+        
+    
+    body
+        <div class="container">
+        <div class="logo">
+        <img src="" alt="">
+        </div>
+        
+        <!-- this is for background logo -->
+        
+
+        
+        .navbar
+            ul                
+                li #[a(href="/HomePage") HomePage]
+                li #[a(href="/ScoreBoard") ScoreBoard]
+                li #[a(href="/SeriesInfo") SeriesInfo]
+                li #[a(href="") Teams]
+                form(action="/Search",method="GET", class="searchbar")
+                    input(type="text" class="myinput" name="search" placeholder="Serach Player")
+                    button(type="submit")
+        <div class="empty">
+        h1  Recent Events 
+        br 
+        each t, i in info 
+            h3 Match: #{t.t1} vs #{t.t2}
+               
+    
+        
+

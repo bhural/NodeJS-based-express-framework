@@ -1,0 +1,34 @@
+doctype html 
+html
+    head
+        title Document
+        link(rel='stylesheet' href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap")   
+        link(rel='stylesheet' href="https://fonts.gstatic.com") 
+        
+    
+    body
+        <div class="container">
+        <div class="logo">
+        <img src="" alt="">
+        </div>
+        
+
+        .navbar
+            ul                
+                li #[a(href="/HomePage") HomePage]
+                li #[a(href="/ScoreBoard") ScoreBoard]
+                li #[a(href="/SeriesInfo") SeriesInfo]
+                li #[a(href="/Teams") Teams]
+                form(action="/Search",method="GET", class="searchbar")
+                    input(type="text" class="myinput" name="name1" placeholder="Serach Player")
+                    button(type="submit")
+        <div class="empty">
+
+    h1 Player 
+            each t, i in info 
+                h3 Name: #{t}
+            
+               
+    
+        
+
